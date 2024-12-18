@@ -45,10 +45,21 @@
         .start-button:hover {
             background-color: #2980b9;
         }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="image-container">
+            <img src="/mnt/data/그림1.png" alt="GROW 캐릭터 이미지">
+        </div>
         <h1>📊 나의 직무 MBTI 성향 테스트</h1>
         <p class="description">
             당신의 성격과 직무 성향을 분석하여 가장 잘 맞는 직무와 직업 영역을 찾아드립니다. 
@@ -59,7 +70,6 @@
 
     <script>
         function startTest() {
-            // 다음 페이지로 이동하는 로직 (나중에 구현)
             alert('테스트를 곧 시작합니다!');
         }
     </script>
