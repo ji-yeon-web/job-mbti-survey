@@ -82,16 +82,6 @@
 
     <button type="submit">결과 보기 (샘플)</button>
   </form>
-
-  <script>
-    document.getElementById('surveyForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      let resultText = '선택하신 답변:\n';
-      for (const [key, value] of formData.entries()) {
-        resultText += `${key}: ${value}\n`;
-      }
-      alert(resultText);
     });
   </script>
 
